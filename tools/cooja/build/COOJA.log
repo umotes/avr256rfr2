@@ -1,0 +1,120 @@
+[08:23:41 - AWT-EventQueue-0] [Cooja.java:2865] [INFO] - External tools default settings: /external_tools_linux.config
+[08:23:41 - AWT-EventQueue-0] [Cooja.java:2895] [INFO] - External tools user settings: /home/user/.cooja.user.properties
+[08:23:56 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[08:23:56 - AWT-EventQueue-0] [Visualizer.java:256] [INFO] - Registered external visualizer: org.contikios.cooja.plugins.skins.DGRMVisualizerSkin
+[08:24:19 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[08:24:43 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:24:58 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[08:25:02 - Thread-3] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425540302466
+[08:31:22 - Thread-3] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425540682100	Duration: 379634 ms	Simulated time 1319672 ms	Ratio 3.476169152394148
+[08:31:22 - Thread-4] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[08:31:22 - Thread-4] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[08:31:22 - Thread-4] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:31:22 - Thread-4] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[08:31:22 - Thread-4] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[08:31:22 - Thread-5] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425540682895
+[08:31:38 - Thread-5] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425540698748	Duration: 15853 ms	Simulated time 66387 ms	Ratio 4.187661641329717
+[08:31:38 - Thread-6] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[08:31:38 - Thread-6] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[08:31:38 - Thread-6] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:31:39 - Thread-6] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[08:31:39 - Thread-6] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[08:31:39 - Thread-7] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425540699465
+[08:33:05 - Thread-7] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425540785393	Duration: 85928 ms	Simulated time 93363 ms	Ratio 1.08652592868448
+[08:33:05 - Thread-8] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[08:33:05 - Thread-8] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[08:33:05 - Thread-8] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:33:05 - Thread-8] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[08:33:06 - Thread-8] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[08:33:06 - Thread-9] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425540786548
+[08:34:25 - Thread-9] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425540865755	Duration: 79207 ms	Simulated time 83883 ms	Ratio 1.0590351862840406
+[08:34:25 - Thread-10] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[08:34:25 - Thread-10] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[08:34:26 - Thread-10] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:34:26 - Thread-10] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[08:34:26 - Thread-10] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[08:34:26 - Thread-11] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425540866549
+[08:35:24 - Thread-11] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425540924286	Duration: 57737 ms	Simulated time 77589 ms	Ratio 1.343834975838717
+[08:55:25 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:55:25 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:55:25 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:55:25 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:55:49 - Thread-13] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[08:55:50 - Thread-13] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[08:55:50 - Thread-13] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:55:50 - Thread-13] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[08:55:50 - Thread-13] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:55:50 - Thread-13] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:55:50 - Thread-13] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:55:50 - Thread-13] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:55:50 - Thread-13] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[08:55:53 - Thread-14] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425542153959
+[08:58:32 - Thread-14] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425542312016	Duration: 158057 ms	Simulated time 99715 ms	Ratio 0.630879998987707
+[08:58:32 - Thread-15] [AbstractRadioMedium.java:198] [FATAL] - Connection source turned off radio: org.contikios.cooja.mspmote.interfaces.Msp802154Radio@7d25a1
+[08:58:32 - Thread-15] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[08:58:32 - Thread-15] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[08:58:32 - Thread-15] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:58:32 - Thread-15] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[08:58:32 - Thread-15] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:58:32 - Thread-15] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:58:32 - Thread-15] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:58:32 - Thread-15] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:58:33 - Thread-15] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[08:58:33 - Thread-16] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425542313356
+[09:00:36 - Thread-16] [Simulation.java:292] [FATAL] - Simulation stopped due to error: Jumping to a time that is further than possible not LPM maxCycles:307411516 cycles: 307411397
+java.lang.IllegalArgumentException: Jumping to a time that is further than possible not LPM maxCycles:307411516 cycles: 307411397
+	at se.sics.mspsim.core.MSP430.stepMicros(MSP430.java:239)
+	at org.contikios.cooja.mspmote.MspMote.execute(MspMote.java:319)
+	at org.contikios.cooja.mspmote.MspMoteTimeEvent.execute(MspMoteTimeEvent.java:53)
+	at org.contikios.cooja.mspmote.interfaces.Msp802154Radio$6.execute(Msp802154Radio.java:262)
+	at org.contikios.cooja.Simulation.run(Simulation.java:280)
+	at java.lang.Thread.run(Thread.java:745)
+[09:00:39 - Thread-16] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425542439595	Duration: 126239 ms	Simulated time 79202 ms	Ratio 0.6273972385712815
+[09:01:03 - Thread-18] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425542463412
+[09:01:03 - Thread-18] [Simulation.java:292] [FATAL] - Simulation stopped due to error: Jumping to a time that is further than possible not LPM maxCycles:307620170 cycles: 307620049
+java.lang.IllegalArgumentException: Jumping to a time that is further than possible not LPM maxCycles:307620170 cycles: 307620049
+	at se.sics.mspsim.core.MSP430.stepMicros(MSP430.java:239)
+	at org.contikios.cooja.mspmote.MspMote.execute(MspMote.java:319)
+	at org.contikios.cooja.mspmote.MspMoteTimeEvent.execute(MspMoteTimeEvent.java:53)
+	at org.contikios.cooja.mspmote.interfaces.Msp802154Radio$6.execute(Msp802154Radio.java:262)
+	at org.contikios.cooja.Simulation.run(Simulation.java:280)
+	at java.lang.Thread.run(Thread.java:745)
+[09:01:05 - Thread-18] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425542465797	Duration: 2385 ms	Simulated time 79202 ms	Ratio 33.2083857442348
+[09:01:07 - Thread-20] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425542467536
+[09:01:07 - Thread-20] [Simulation.java:292] [FATAL] - Simulation stopped due to error: Jumping to a time that is further than possible not LPM maxCycles:307411641 cycles: 307411397
+java.lang.IllegalArgumentException: Jumping to a time that is further than possible not LPM maxCycles:307411641 cycles: 307411397
+	at se.sics.mspsim.core.MSP430.stepMicros(MSP430.java:239)
+	at org.contikios.cooja.mspmote.MspMote.execute(MspMote.java:319)
+	at org.contikios.cooja.mspmote.MspMoteTimeEvent.execute(MspMoteTimeEvent.java:53)
+	at org.contikios.cooja.mspmote.interfaces.Msp802154Radio$6.execute(Msp802154Radio.java:262)
+	at org.contikios.cooja.Simulation.run(Simulation.java:280)
+	at java.lang.Thread.run(Thread.java:745)
+[09:01:12 - Thread-20] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425542472309	Duration: 4773 ms	Simulated time 79202 ms	Ratio 16.59375654724492
+[09:01:14 - Thread-22] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[09:01:14 - Thread-22] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[09:01:14 - Thread-22] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[09:01:14 - Thread-22] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[09:01:14 - Thread-22] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[09:01:14 - Thread-22] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[09:01:14 - Thread-22] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[09:01:18 - Thread-23] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425542478979
+[09:05:47 - Thread-23] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425542747011	Duration: 268032 ms	Simulated time 168903 ms	Ratio 0.6301598316618912
+[09:05:53 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[09:06:09 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[09:06:27 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make root.sky TARGET=sky 
+[09:06:53 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[09:07:14 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[09:07:18 - Thread-27] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425542838852
+[09:11:14 - Thread-27] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425543074025	Duration: 235173 ms	Simulated time 280309 ms	Ratio 1.1919267943173748
+[09:11:19 - AWT-EventQueue-0] [AbstractRadioMedium.java:198] [FATAL] - Connection source turned off radio: org.contikios.cooja.mspmote.interfaces.Msp802154Radio@1dc8e06
+[09:11:20 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[09:11:42 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[09:12:00 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make root.sky TARGET=sky 
+[09:12:05 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[09:12:21 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[09:12:28 - Thread-31] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425543148556
+[09:13:18 - Thread-31] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425543198307	Duration: 49751 ms	Simulated time 105403 ms	Ratio 2.118610681192338
+[09:17:54 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[09:18:29 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make root.elf TARGET=micaz 
+[09:19:05 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make clean TARGET=micaz 
+[09:19:06 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make clean TARGET=micaz 

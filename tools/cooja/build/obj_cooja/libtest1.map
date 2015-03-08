@@ -1,0 +1,403 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+arr1                0x28              obj_cooja/libtest1.o
+uvar2               0x4               obj_cooja/libtest1.o
+referenceVar        0x4               obj_cooja/libtest1.o
+arr2                0x28              obj_cooja/libtest1.o
+uvar1               0x4               obj_cooja/libtest1.o
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+ .gnu_debuglink
+                0x0000000000000000        0xc /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+ .group         0x0000000000000000        0x8 /usr/lib/gcc/i686-linux-gnu/4.6/crtbeginS.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.6/crtbeginS.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 obj_cooja/libtest1.o
+ .group         0x0000000000000000        0x8 /usr/lib/gcc/i686-linux-gnu/4.6/crtendS.o
+ .text.__i686.get_pc_thunk.bx
+                0x0000000000000000        0x4 /usr/lib/gcc/i686-linux-gnu/4.6/crtendS.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.6/crtendS.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crtn.o
+ .gnu_debuglink
+                0x0000000000000000        0xc /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+LOAD /usr/lib/gcc/i686-linux-gnu/4.6/crtbeginS.o
+LOAD obj_cooja/libtest1.o
+LOAD obj_cooja/libtest1.a
+LOAD /usr/lib/gcc/i686-linux-gnu/4.6/libgcc.a
+LOAD /usr/lib/gcc/i686-linux-gnu/4.6/libgcc_s.so
+LOAD /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/libc.so
+START GROUP
+LOAD /lib/i386-linux-gnu/libc.so.6
+LOAD /usr/lib/i386-linux-gnu/libc_nonshared.a
+LOAD /lib/i386-linux-gnu/ld-linux.so.2
+END GROUP
+LOAD /usr/lib/gcc/i686-linux-gnu/4.6/libgcc.a
+LOAD /usr/lib/gcc/i686-linux-gnu/4.6/libgcc_s.so
+LOAD /usr/lib/gcc/i686-linux-gnu/4.6/crtendS.o
+LOAD /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crtn.o
+                0x0000000000000114                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+                0x0000000000000114       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000000114       0x24 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+
+.hash
+ *(.hash)
+
+.gnu.hash       0x0000000000000138       0xb0
+ *(.gnu.hash)
+ .gnu.hash      0x0000000000000138       0xb0 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+
+.dynsym         0x00000000000001e8      0x180
+ *(.dynsym)
+ .dynsym        0x00000000000001e8      0x180 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+
+.dynstr         0x0000000000000368      0x1b7
+ *(.dynstr)
+ .dynstr        0x0000000000000368      0x1b7 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+
+.gnu.version    0x0000000000000520       0x30
+ *(.gnu.version)
+ .gnu.version   0x0000000000000520       0x30 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+
+.gnu.version_d  0x0000000000000550        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+
+.gnu.version_r  0x0000000000000550       0x30
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000000550       0x30 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+
+.rel.dyn        0x0000000000000580       0x68
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x0000000000000580       0x48 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ .rel.data.rel  0x00000000000005c8        0x8 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x00000000000005d0       0x18 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.ifunc)
+ .rel.ifunc     0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+
+.rel.plt        0x00000000000005e8       0x10
+ *(.rel.plt)
+ .rel.plt       0x00000000000005e8       0x10 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+ *(.rel.iplt)
+
+.init           0x00000000000005f8       0x2e
+ *(.init)
+ .init          0x00000000000005f8       0x1f /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+                0x00000000000005f8                _init
+ .init          0x0000000000000617        0x5 /usr/lib/gcc/i686-linux-gnu/4.6/crtbeginS.o
+ .init          0x000000000000061c        0x5 /usr/lib/gcc/i686-linux-gnu/4.6/crtendS.o
+ .init          0x0000000000000621        0x5 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crtn.o
+
+.plt            0x0000000000000630       0x30
+ *(.plt)
+ .plt           0x0000000000000630       0x30 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+ *(.iplt)
+
+.text           0x0000000000000660      0x1e8
+ *(.text.unlikely .text.*_unlikely)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000000660        0x0 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+ .text          0x0000000000000660       0xb7 /usr/lib/gcc/i686-linux-gnu/4.6/crtbeginS.o
+ .text.__i686.get_pc_thunk.bx
+                0x0000000000000717        0x4 /usr/lib/gcc/i686-linux-gnu/4.6/crtbeginS.o
+                0x0000000000000717                __i686.get_pc_thunk.bx
+ *fill*         0x000000000000071b        0x1 90909090
+ .text          0x000000000000071c       0xe7 obj_cooja/libtest1.o
+                0x000000000000071c                Java_org_contikios_cooja_corecomm_LibTest1_init
+                0x0000000000000721                Java_org_contikios_cooja_corecomm_LibTest1_getMemory
+                0x000000000000075e                Java_org_contikios_cooja_corecomm_LibTest1_setMemory
+                0x00000000000007d2                Java_org_contikios_cooja_corecomm_LibTest1_tick
+                0x00000000000007f1                Java_org_contikios_cooja_corecomm_LibTest1_setReferenceAddress
+ *fill*         0x0000000000000803        0xd 90909090
+ .text          0x0000000000000810       0x38 /usr/lib/gcc/i686-linux-gnu/4.6/crtendS.o
+ .text          0x0000000000000848        0x0 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crtn.o
+ *(.gnu.warning)
+
+.fini           0x0000000000000848       0x1a
+ *(.fini)
+ .fini          0x0000000000000848       0x10 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+                0x0000000000000848                _fini
+ .fini          0x0000000000000858        0x5 /usr/lib/gcc/i686-linux-gnu/4.6/crtbeginS.o
+ .fini          0x000000000000085d        0x5 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crtn.o
+                0x0000000000000862                PROVIDE (__etext, .)
+                0x0000000000000862                PROVIDE (_etext, .)
+                0x0000000000000862                PROVIDE (etext, .)
+
+.rodata
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000000864       0x3c
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000000864       0x3c /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+
+.eh_frame       0x00000000000008a0       0xe0
+ *(.eh_frame)
+ .eh_frame      0x00000000000008a0       0x3c /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x00000000000008dc       0xa0 obj_cooja/libtest1.o
+                                         0xb8 (size before relaxing)
+ .eh_frame      0x000000000000097c        0x4 /usr/lib/gcc/i686-linux-gnu/4.6/crtendS.o
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x0000000000000980                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x0000000000001f0c                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+
+.fini_array
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+
+.ctors          0x0000000000001f0c        0x8
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ .ctors         0x0000000000001f0c        0x4 /usr/lib/gcc/i686-linux-gnu/4.6/crtbeginS.o
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x0000000000001f10        0x4 /usr/lib/gcc/i686-linux-gnu/4.6/crtendS.o
+
+.dtors          0x0000000000001f14        0x8
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ .dtors         0x0000000000001f14        0x4 /usr/lib/gcc/i686-linux-gnu/4.6/crtbeginS.o
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x0000000000001f18        0x4 /usr/lib/gcc/i686-linux-gnu/4.6/crtendS.o
+                0x0000000000001f18                __DTOR_END__
+
+.jcr            0x0000000000001f1c        0x4
+ *(.jcr)
+ .jcr           0x0000000000001f1c        0x0 /usr/lib/gcc/i686-linux-gnu/4.6/crtbeginS.o
+ .jcr           0x0000000000001f1c        0x4 /usr/lib/gcc/i686-linux-gnu/4.6/crtendS.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x0000000000001f20       0xc8
+ *(.dynamic)
+ .dynamic       0x0000000000001f20       0xc8 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+                0x0000000000001f20                _DYNAMIC
+
+.got            0x0000000000001fe8        0xc
+ *(.got)
+ .got           0x0000000000001fe8        0xc /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+ *(.igot)
+                0x0000000000001ff4                . = DATA_SEGMENT_RELRO_END (., 0xc)
+
+.got.plt        0x0000000000001ff4       0x14
+ *(.got.plt)
+ .got.plt       0x0000000000001ff4       0x14 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+                0x0000000000001ff4                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+
+.data           0x0000000000002008       0x10
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000002008        0x0 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+ .data          0x0000000000002008        0x0 /usr/lib/gcc/i686-linux-gnu/4.6/crtbeginS.o
+ .data.rel      0x0000000000002008        0x4 /usr/lib/gcc/i686-linux-gnu/4.6/crtbeginS.o
+                0x0000000000002008                __dso_handle
+ .data          0x000000000000200c        0xc obj_cooja/libtest1.o
+                0x000000000000200c                var1
+                0x0000000000002010                var2
+                0x0000000000002014                var3
+ .data          0x0000000000002018        0x0 /usr/lib/gcc/i686-linux-gnu/4.6/crtendS.o
+ .data          0x0000000000002018        0x0 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crtn.o
+
+.data1
+ *(.data1)
+                0x0000000000002018                _edata = .
+                0x0000000000002018                PROVIDE (edata, .)
+                0x0000000000002018                __bss_start = .
+
+.bss            0x0000000000002020       0x8c
+ *(.dynbss)
+ .dynbss        0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000002020        0x0 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crti.o
+ .bss           0x0000000000002020        0x8 /usr/lib/gcc/i686-linux-gnu/4.6/crtbeginS.o
+ .bss           0x0000000000002028        0x4 obj_cooja/libtest1.o
+                0x0000000000002028                simInterfaces
+ .bss           0x000000000000202c        0x0 /usr/lib/gcc/i686-linux-gnu/4.6/crtendS.o
+ .bss           0x000000000000202c        0x0 /usr/lib/gcc/i686-linux-gnu/4.6/../../../i386-linux-gnu/crtn.o
+ *(COMMON)
+ *fill*         0x000000000000202c       0x14 00
+ COMMON         0x0000000000002040       0x6c obj_cooja/libtest1.o
+                0x0000000000002040                arr1
+                0x0000000000002068                uvar2
+                0x000000000000206c                referenceVar
+                0x0000000000002080                arr2
+                0x00000000000020a8                uvar1
+                0x00000000000020ac                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x00000000000020ac                . = ALIGN (0x4)
+                0x00000000000020ac                . = ALIGN (0x4)
+                0x00000000000020ac                _end = .
+                0x00000000000020ac                PROVIDE (end, .)
+                0x00000000000020ac                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2a
+ *(.comment)
+ .comment       0x0000000000000000       0x2a /usr/lib/gcc/i686-linux-gnu/4.6/crtbeginS.o
+                                         0x2b (size before relaxing)
+ .comment       0x0000000000000000       0x2b obj_cooja/libtest1.o
+ .comment       0x0000000000000000       0x2b /usr/lib/gcc/i686-linux-gnu/4.6/crtendS.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000       0x20
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 obj_cooja/libtest1.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x31c8
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000     0x31c8 obj_cooja/libtest1.o
+
+.debug_abbrev   0x0000000000000000      0x166
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x166 obj_cooja/libtest1.o
+
+.debug_line     0x0000000000000000       0xf4
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0xf4 obj_cooja/libtest1.o
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x0000000000000000     0x156b
+ *(.debug_str)
+ .debug_str     0x0000000000000000     0x156b obj_cooja/libtest1.o
+                                       0x15ea (size before relaxing)
+
+.debug_loc      0x0000000000000000      0x118
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x118 obj_cooja/libtest1.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(obj_cooja/libtest1.cooja elf32-i386)
