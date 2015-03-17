@@ -3,7 +3,7 @@ CONTIKI_TARGET_DIRS = . apps net loader dev
 CONTIKI_CORE=contiki-main
 CONTIKI_TARGET_MAIN = ${CONTIKI_CORE}.o
 CONTIKI_TARGET_SOURCEFILES += contiki-main.c leds.c twiDriver.c params.c battery-sensor.c sht21-sensor.c sht21.c \
-				radio-sensor.c temperature-sensor.c
+				radio-sensor.c temperature-sensor.c ssd1306_main.c
 
  
 

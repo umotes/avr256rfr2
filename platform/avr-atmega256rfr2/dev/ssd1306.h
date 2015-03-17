@@ -1,12 +1,12 @@
 #ifndef SSD1306_H_INCLUDED
  #define SSD1306_H_INCLUDED
  
- #include <status_codes.h>
- #include <delay.h>
+// #include "contiki.h"
+// #include "contiki-conf.h"
  #include "conf_ssd1306.h"
- #include <spi-master.h> 
  #include "avr/io.h"
- #include "dev/clock-avr.h"
+// #include "dev/clock-avr.h"
+
     // controller and OLED configuration file
 
 
@@ -50,7 +50,7 @@
   #define SSD1306_RES_PIN         UG_2832HSWEG04_RESET
   #define SSD1306_CS_PIN          UG_2832HSWEG04_SS
 
-  #define  SD1306_LATENCY 10
+  #define SSD1306_LATENCY 10
   #define SPI_TXBUF SPDR
   #define SPI_RXBUF SPDR
   #define BV(bitno) (1<<bitno)
