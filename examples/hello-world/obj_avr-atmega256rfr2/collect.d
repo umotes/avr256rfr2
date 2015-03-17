@@ -32,7 +32,8 @@ obj_avr-atmega256rfr2/collect.o: ../../core/net/rime/collect.c \
  ../../core/net/rime/polite.h ../../core/net/rime/rimestats.h \
  ../../core/net/rime/rmh.h ../../core/net/rime/route.h \
  ../../core/net/rime/rucb.h ../../core/net/rime/timesynch.h \
- ../../core/net/rime/trickle.h ../../core/dev/radio-sensor.h \
+ ../../core/net/rime/trickle.h \
+ ../../platform/avr-atmega256rfr2/dev/radio-sensor.h \
  ../../core/lib/sensors.h ../../core/lib/random.h
 ../../core/net/rime/collect.c :
  ../../core/contiki.h ../../core/contiki-version.h :
@@ -68,5 +69,6 @@ obj_avr-atmega256rfr2/collect.o: ../../core/net/rime/collect.c \
  ../../core/net/rime/polite.h ../../core/net/rime/rimestats.h :
  ../../core/net/rime/rmh.h ../../core/net/rime/route.h :
  ../../core/net/rime/rucb.h ../../core/net/rime/timesynch.h :
- ../../core/net/rime/trickle.h ../../core/dev/radio-sensor.h :
+ ../../core/net/rime/trickle.h :
+ ../../platform/avr-atmega256rfr2/dev/radio-sensor.h :
  ../../core/lib/sensors.h ../../core/lib/random.h :

@@ -12,7 +12,7 @@ obj_avr-atmega256rfr2/button-sensor.o: \
  ../../core/sys/rtimer.h ../../cpu/avr/rtimer-arch.h ../../core/sys/pt.h \
  ../../core/sys/procinit.h ../../core/sys/loader.h ../../core/sys/clock.h \
  ../../core/sys/energest.h ../../core/sys/rtimer.h \
- ../../core/dev/button-sensor.h
+ ../../platform/avr-atmega256rfr2/./dev/button-sensor.h
  ../../platform/avr-atmega256rfr2/./button-sensor.c :
  ../../core/lib/sensors.h ../../core/contiki.h :
  ../../core/contiki-version.h :
@@ -26,4 +26,4 @@ obj_avr-atmega256rfr2/button-sensor.o: \
  ../../core/sys/rtimer.h ../../cpu/avr/rtimer-arch.h ../../core/sys/pt.h :
  ../../core/sys/procinit.h ../../core/sys/loader.h ../../core/sys/clock.h :
  ../../core/sys/energest.h ../../core/sys/rtimer.h :
- ../../core/dev/button-sensor.h :
+ ../../platform/avr-atmega256rfr2/./dev/button-sensor.h :

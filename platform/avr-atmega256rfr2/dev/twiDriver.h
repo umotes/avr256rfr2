@@ -37,6 +37,8 @@
 
 #include <util/twi.h>
 
+#define TWI_READ  1
+#define TWI_WRITE 0
 
 // TWI Init  function, this fucntion initializes the SCL 
 void TWIInit(void);

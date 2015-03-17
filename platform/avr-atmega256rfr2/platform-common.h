@@ -62,8 +62,6 @@
 #define LEDS_PEOUT PORTE // port register
 #define LEDS_PEDIR DDRE // port direction register
 
-#define READ  1
-#define WRITE 0
 
 #define LEDS_POWER  0x01 //red led
 #define LEDS_STATUS 0x02 // green led

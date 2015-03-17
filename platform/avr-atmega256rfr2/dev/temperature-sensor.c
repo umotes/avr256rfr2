@@ -39,26 +39,90 @@
 #include "contiki.h"
 #include <util/twi.h>
 #include "dev/twiDriver.h"
+
+
+
 #define INPUT_CHANNEL      (1 << INCH_10)
 #define INPUT_REFERENCE    SREF_1
 #define TEMPERATURE_MEM    ADC12MEM10
+#define TEMP_LOWLMT_ADDR 0x12
+#define TEMP_HILMT_ADDR  0x13
+#define TEMP_CONFIG_ADDR 0x01
+#define DEF_POINTER_ADDR 0x00
+
+//#define TEMP_CONV_RESO      0x
+//#define TEMP_ALERT_PIN      0x
+
+#define SENSOR_CONFIG_HT  1
+#define SENSOR_CONFIG_LT  2
+#define SENSOR_CONFIG_RESO 3
+#define SENSOR_CONFIG_ALERT 4
+
+
+
 
 const struct sensors_sensor temperature_sensor;
-static int8_t ReadTemp73(void);
 
 /*---------------------------------------------------------------------------*/
 static int
 value(int type)
 {
-  return ReadTemp73();
+  uint8_t slaveAddr=type;
+  return ReadTempVal(slaveAddr);
 } 
 /*---------------------------------------------------------------------------*/
+
+static int configure(int type, int c)
+{
+   int value=c;
+   switch(type)
+   {
+   
+    case SENSORS_HW_INIT:
+    TWIInit();
+    return 0;
+ 
+    case SENSOR_CONFIG_LT:
+        if(value)
+        {
+//	return SetTempLowLimit(value);
+        return 0;      
+	}
+	else 
+	return 0;
+	
+
+    case SENSOR_CONFIG_HT:
+        
+	if(value)
+	{
+//	return SetTempHiLimit(value);
+        return 0;
+	}
+	
+        else 
+	
+	return 0;
+       
+ 	
+	case SENSOR_CONFIG_RESO:
+        return 0;
+       
+	case SENSOR_CONFIG_ALERT:
+        return 0;
+  }
+
+}
+/*
 static int
 configure(int type, int c)
 {
-  TWIInit();
-  return 0;
+TWIInit();
+return 0;
+
 }
+*/
+
 /*---------------------------------------------------------------------------*/
 static int
 status(int type)
@@ -70,11 +134,13 @@ status(int type)
 SENSORS_SENSOR(temperature_sensor, TEMPERATURE_SENSOR,
                value, configure, status);
 
- 
-int8_t ReadTemp73(void)
+/*---------------------------------------------------------------------------*/
+//   Read Sensor Temperature 
+/*---------------------------------------------------------------------------*/ 
+int8_t ReadTempVal(uint8_t slaveAddr)
 {
   //  uint8_t adressRead = b10010011;
-  uint8_t adressRead = 0b1001011; //   0b10010001; 
+//  uint8_t slaveAddr = 0b1001011; //   0b10010001; 
   uint8_t temp;
   uint16_t tempData = 0;
   TWIInit();
@@ -85,7 +151,7 @@ int8_t ReadTemp73(void)
     return 1;
 
   //select devise and send A2 A1 A0 address bits
-  TWIWrite( (adressRead<<1) | TW_READ );
+  TWIWrite( (slaveAddr<<1) | TWI_READ );
 
   if (TWIGetStatus() != TW_MR_SLA_ACK)
     return 2;
@@ -110,3 +176,133 @@ int8_t ReadTemp73(void)
   // 128 - (2^11-t>>4)*0.0625
   return (int)(128 - (2048-(tempData>>4))*0.0625);
 }
+
+/*---------------------------------------------------------------------------*/
+//   Configure Temperature Low Limit Register
+/*---------------------------------------------------------------------------*/
+int8_t SetTempLowLimit(uint8_t slaveAddr,uint16_t value)
+{
+
+// Temp Low Limit Configuratuation register sub address
+  uint8_t loLmtSubAddr = TEMP_LOWLMT_ADDR; 
+//  uint8_t slaveAddr = 0b1001011; //   0b10010001; 
+  uint16_t temp;
+  TWIInit();
+
+  TWIStart();
+
+  if (TWIGetStatus() != TW_START)
+    return 1;
+
+  //select devise and send A2 A1 A0 address bits
+  TWIWrite( (slaveAddr<<1) | TWI_WRITE );
+
+  if (TWIGetStatus() != TW_MR_SLA_ACK)
+    return 2;
+
+  // Write Address Pointer with Low Temperature Configuration address
+  TWIWrite(loLmtSubAddr);
+
+  if (TWIGetStatus() != TW_MR_SLA_ACK)
+    return 3;
+
+  // Set Low Limit - Pass value to  be written  to Low Limit Re4gister
+  // Write  High Byte of the value Passes  and then Wait for  ACK 
+  // After ACK  Write the  Low Byte  and then  Wait  for ACK  for Succesful Write
+  // FOllowed  by I2C/TWI  Stop  COmmand, as per  Data Sheet of Sensor 
+
+
+  temp=(uint8_t)value;
+  Write(temp);
+  if (TWIGetStatus() != TW_MR_SLA_ACK)
+    return 4;
+
+  temp=(uint8_t)(value<<8);
+  Write(temp);
+  if (TWIGetStatus() != TW_MR_SLA_ACK)
+    return 5;
+
+  TWIStop();
+    return 6;
+
+}
+
+/*---------------------------------------------------------------------------*/
+//   Configure Temperature High Limit Register
+/*---------------------------------------------------------------------------*/
+int8_t SetTempHiLimit(uint8_t slaveAddr, uint16_t value)
+{
+// Temp Low Limit Configuratuation register sub address
+  uint8_t hiLmtSubAddr = TEMP_HILMT_ADDR;
+//  uint8_t slaveAddr = 0b1001011; //   0b10010001; 
+  uint8_t temp;
+
+TWIInit();
+
+  TWIStart();
+
+  if (TWIGetStatus() != TW_START)
+    return 1;
+
+  //select devise and send A2 A1 A0 address bits
+  TWIWrite( (slaveAddr<<1) | TWI_WRITE );
+
+  if (TWIGetStatus() != TW_MR_SLA_ACK)
+    return 2;
+
+  // Write Address Pointer with High Temperature Limit Configuration address
+  TWIWrite(hiLmtSubAddr);
+
+  if (TWIGetStatus() != TW_MR_SLA_ACK)
+    return 3;
+
+  // Set High Temperature  Limit - Pass value to  be written  to Low Limit Re4gister
+  temp= (uint8_t)value;
+  Write(temp);
+
+  if (TWIGetStatus() != TW_MR_SLA_ACK)
+    return 4;
+
+  temp=(uint8_t)(value<<8);
+  Write(temp);
+
+  if (TWIGetStatus() != TW_MR_SLA_ACK)
+    return 5;
+
+
+  TWIStop();
+  return 6;
+
+
+}
+
+/*---------------------------------------------------------------------------*/
+//   Reset Address Pointer with Default Address After Writing Configuration Register
+/*---------------------------------------------------------------------------*/
+int8_t ResetTempSenPtr(uint8_t slaveAddr)
+{
+  uint8_t defaultAddr =DEF_POINTER_ADDR;
+ // uint8_t slaveAddr = 0b1001011; //   0b10010001; 
+  TWIInit();
+
+  TWIStart();
+
+  if (TWIGetStatus() != TW_START)
+    return 1;
+
+  //select devise and send A2 A1 A0 address bits
+  TWIWrite( (slaveAddr<<1) | TWI_WRITE );
+
+  if (TWIGetStatus() != TW_MR_SLA_ACK)
+    return 2;
+
+  
+  Write(defaultAddr);
+  if (TWIGetStatus() != TW_MR_DATA_ACK)
+    return 3;
+
+  TWIStop();
+  return 4;
+
+}
+

@@ -31,7 +31,8 @@ obj_avr-atmega256rfr2/neighbor-discovery.o: \
  ../../core/net/rime/rmh.h ../../core/net/rime/route.h \
  ../../core/net/rime/rucb.h ../../core/net/rime/timesynch.h \
  ../../core/net/mac/mac.h ../../core/dev/radio.h \
- ../../core/net/rime/trickle.h ../../core/dev/radio-sensor.h \
+ ../../core/net/rime/trickle.h \
+ ../../platform/avr-atmega256rfr2/dev/radio-sensor.h \
  ../../core/lib/sensors.h ../../core/lib/random.h
  ../../core/net/rime/neighbor-discovery.c ../../core/contiki.h :
  ../../core/contiki-version.h :
@@ -65,5 +66,6 @@ obj_avr-atmega256rfr2/neighbor-discovery.o: \
  ../../core/net/rime/rmh.h ../../core/net/rime/route.h :
  ../../core/net/rime/rucb.h ../../core/net/rime/timesynch.h :
  ../../core/net/mac/mac.h ../../core/dev/radio.h :
- ../../core/net/rime/trickle.h ../../core/dev/radio-sensor.h :
+ ../../core/net/rime/trickle.h :
+ ../../platform/avr-atmega256rfr2/dev/radio-sensor.h :
  ../../core/lib/sensors.h ../../core/lib/random.h :

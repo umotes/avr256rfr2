@@ -11,7 +11,8 @@ obj_avr-atmega256rfr2/battery-sensor.o: \
  ../../core/sys/rtimer.h ../../cpu/avr/rtimer-arch.h ../../core/sys/pt.h \
  ../../core/sys/procinit.h ../../core/sys/loader.h ../../core/sys/clock.h \
  ../../core/sys/energest.h ../../core/sys/rtimer.h \
- ../../core/dev/battery-sensor.h ../../core/lib/sensors.h
+ ../../platform/avr-atmega256rfr2/dev/battery-sensor.h \
+ ../../core/lib/sensors.h
  ../../platform/avr-atmega256rfr2/dev/battery-sensor.c :
  ../../core/contiki.h ../../core/contiki-version.h :
  ../../platform/avr-atmega256rfr2/contiki-conf.h :
@@ -24,4 +25,5 @@ obj_avr-atmega256rfr2/battery-sensor.o: \
  ../../core/sys/rtimer.h ../../cpu/avr/rtimer-arch.h ../../core/sys/pt.h :
  ../../core/sys/procinit.h ../../core/sys/loader.h ../../core/sys/clock.h :
  ../../core/sys/energest.h ../../core/sys/rtimer.h :
- ../../core/dev/battery-sensor.h ../../core/lib/sensors.h :
+ ../../platform/avr-atmega256rfr2/dev/battery-sensor.h :
+ ../../core/lib/sensors.h :
